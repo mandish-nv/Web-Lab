@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Adder</title>
+  </head>
+  <body>
+    Number: <input type="number" id="num" /> Adder:
+    <input type="number" id="adder" />
+    <button onclick="start();" id="button">Start</button>
+    <button onclick="reset();" id="reset">Reset</button>
+    <p id="result"></p>
+
+    <script>
+      let running = false;
+      let interval;
+
+      function start() {
+        const num = parseInt(document.querySelector("#num").value);
+        const adder = parseInt(document.querySelector("#adder").value);
+        let sum = num;
+        if (document.querySelector("#result").innerText) {
+          sum = parseInt(document.querySelector("#result").innerText);
+        }
+        if (!running) {
+          interval = setInterval(() => {
+            sum = sum + adder;
+            document.querySelector("#result").innerHTML = sum;
+          }, 1000);
+          running = true;
+
+          document.querySelector("#button").innerHTML = "Stop";
+        } else {
+          stop();
+        }
+      }
+
+      function reset() {
+        document.querySelector("#num").value = "";
+        document.querySelector("#adder").value = "";
+        document.querySelector("#result").innerHTML = "";
+        if (running) {
+          stop();
+        }
+      }
+
+      function stop() {
+        clearInterval(interval);
+        running = false;
+        document.querySelector("#button").innerHTML = "Start";
+      }
+    </script>
+  </body>
+</html>

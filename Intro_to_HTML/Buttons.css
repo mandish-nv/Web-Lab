@@ -1,0 +1,203 @@
+
+.subscribe-button {
+  background-color: rgb(197, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right:8px;
+  margin-left: 8px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition: opacity 0.15s;
+
+  vertical-align: top;
+}
+
+.subscribe-button:hover{
+  opacity: 0.8;
+}
+
+.subscribe-button:active{
+  opacity: 0.5;
+}
+
+.join-button{
+  background-color: white;
+  color: rgb(48, 97, 201);
+  border-color: rgb(48, 97, 201);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right:8px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  transition: background-color 0.5s, color 0.5s;
+
+  vertical-align: top;
+}
+
+.join-button:hover{
+  background-color: rgb(48, 97, 201);
+  color: white;
+}
+
+.join-button:active{
+  opacity: 0.7;
+}
+
+.tweet-button{
+  background-color: rgb(31, 128, 240);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  margin-right: 8px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition: box-shadow 0.15s;
+
+  vertical-align: top;
+}
+
+.tweet-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.car-button{
+  background-color: rgb(255,216,20);
+  border: none;
+  height: 25px;
+  width: 110px;
+  border-radius: 13px;
+  margin-right: 8px;
+  cursor: pointer;
+
+  transition: opacity 0.15s;
+}
+
+.car-button:hover{
+  opacity: 0.6;
+}
+
+.car-button:active{
+  opacity: 0.3;
+}
+
+.buy-button{
+  background-color: rgb(255,164,28);
+  border: none;
+  height: 25px;
+  width: 110px;
+  border-radius: 13px;
+  margin-right: 8px;
+  cursor: pointer;
+
+  transition: box-shadow 0.15s, opacity 0.15s;
+  }
+
+.buy-button:hover{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.buy-button:active{
+  opacity: 0.4;
+}
+
+.back-next{
+  border: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.link-text{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.stretch{
+ margin-left: 7px;
+ background-color: green;
+ color: white;
+ padding-left: 15px;
+ padding-right: 15px; 
+ padding-top:5px;
+ padding-bottom:5px;
+ border: none;
+ cursor:pointer;
+
+ transition: padding 0.5s;
+}
+
+.stretch:hover{
+  padding-left: 35px;
+  padding-right: 35px; 
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.shadow{
+ margin-left: 7px;
+ background-color: green;
+ color: white;
+ padding-left: 15px;
+ padding-right: 15px; 
+ padding-top:5px;
+ padding-bottom:5px;
+ border: none;
+ cursor:pointer;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shadow:active{
+  box-shadow: 0 0 0 0;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.ott{
+ margin-left: 7px;
+ margin-right:7px;
+
+ background-color: green;
+ color: white;
+ padding-left: 15px;
+ padding-right: 15px; 
+ padding-top:5px;
+ padding-bottom:5px;
+ border: none;
+ cursor:pointer;
+}
+
+.ott:hover{
+  padding-left: 20px;
+ padding-right: 20px; 
+
+ margin-left: 2px;
+ margin-right:2px;
+}

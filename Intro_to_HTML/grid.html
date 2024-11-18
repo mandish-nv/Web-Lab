@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grid practice</title>
+  <style>
+    .profile {
+      margin-top: 20px;
+      box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.384);
+      border-radius: 5px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .dog-profile {
+      width: 100%;
+      height: 300px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .dog-profile:hover {
+      box-shadow: 0 0 2px 2px gray;
+    }
+
+    .dog-profile:active {
+      opacity: 0.7;
+    }
+
+    .dog-name {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .dog-name:hover,
+    .mutual-friends:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .mutual-friends {
+      margin-top: 2px;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: gray;
+
+    }
+
+    .add-friend {
+      margin-top: 8px;
+      border: none;
+      border-radius: 4px;
+      background-color: rgb(44, 95, 204);
+      color: rgba(255, 255, 255, 0.808);
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      cursor: pointer;
+    }
+
+    .add-friend:active {
+      background-color: rgb(92, 134, 224);
+      color: rgba(255, 255, 255, 0.473);
+    }
+    .doggo-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 4px 2px gray;
+      padding: 10px;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body style="padding-bottom: 100px;">
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;
+    ">
+    <div style="background-color: antiquewhite;">
+      Div 1</div>
+    <div style="background-color: lightblue;">
+      Div 2<p>Text</p>
+    </div>
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+    margin-top: 10px;
+    ">
+    <div style="background-color: antiquewhite;">
+      Div 1
+    </div>
+    <div style="background-color: lightblue;">
+      Div 2<p>Text</p>
+    </div>
+    <div style="background-color: lightblue;">
+      Div 2<p>Text</p>
+    </div>
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr; 
+    margin-top: 10px;
+    ">
+    <div style="background-color: antiquewhite;">
+      Div 1
+    </div>
+    <div style="background-color: lightblue;">
+      Div 2
+    </div>
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr; 
+    margin-top: 10px;
+    ">
+    <div style="background-color: antiquewhite;">
+      Div 1
+    </div>
+    <div style="background-color: lightblue;">
+      Div 2
+    </div>
+    <div style="background-color: aqua;">
+      Div 3
+    </div>
+  </div>
+
+  <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin-top: 30px;
+    column-gap: 20px;
+    row-gap: 20px;
+    ">
+    <div style="background-color: antiquewhite;
+    height: 200px;">
+      Div 1
+    </div>
+    <div style="background-color: lightblue;
+    height: 200px;">
+      Div 2
+    </div>
+    <div style="background-color: aqua;
+    height: 200px;">
+      Div 3
+    </div>
+    <div style="background-color: aqua;
+  height: 200px;">
+      Div 3
+    </div>
+    <div style="background-color: antiquewhite;
+    height: 200px;">
+      Div 1
+    </div>
+    <div style="background-color: lightblue;
+    height: 200px;">
+      Div 2
+    </div>
+  </div>
+
+
+  <div class="doggo-grid">
+    <div class="profile">
+      <img src="dog.webp" class="dog-profile">
+      <p class="dog-name">Max</p>
+      <p class="mutual-friends">20 mutual friends</p>
+      <button class="add-friend">Add Friend</button>
+    </div>
+    <div class="profile">
+      <img src="dog2.jpg" class="dog-profile">
+      <p class="dog-name">Jake</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="add-friend">Add Friend</button>
+    </div>
+    <div class="profile">
+      <img src="dog3.jpg" class="dog-profile">
+      <p class="dog-name">Casper</p>
+      <p class="mutual-friends">10 mutual friends</p>
+      <button class="add-friend">Add Friend</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

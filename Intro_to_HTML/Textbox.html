@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .google-box {
+      height: 25px;
+      width: 300px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0px 0px 8px 2px rgb(182, 182, 182);
+    }
+
+    .google-box:hover {
+      box-shadow: 0px 0px 10px 3px rgb(182, 182, 182);
+    }
+
+    .image-edit3 {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .twitter-box {
+      font-size: 15px;
+      border: none;
+      height: 30px;
+      width: 300px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .button {
+      border: none;
+      background-color: rgb(63, 173, 224);
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border-radius: 20px;
+      font-weight: bold;
+      color: white;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    .div-box {
+      display: inline-block;
+      border-radius: 5px;
+      box-shadow: 0 0 6px 2px gray;
+      vertical-align: middle;
+      padding-left: 7px;
+      padding-right: 7px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    .profile{
+      margin-top: 20px;
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.384);
+      border-radius: 5px;
+      display: inline-block;
+      padding-top: 8px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .dog-profile{
+      width: 200px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .dog-profile:hover{
+      box-shadow: 0 0 2px 2px gray;
+    }
+    .dog-profile:active{
+      opacity: 0.7;
+    }
+    .dog-name{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .dog-name:hover,.mutual-friends:hover{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .mutual-friends{
+      margin-top: 2px;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: gray;
+
+    }
+    .add-friend{
+      margin-top: 8px;
+      border:none;
+      border-radius: 4px;
+      background-color: rgb(44, 95, 204);
+      color: rgba(255, 255, 255, 0.808);
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      cursor: pointer;
+    }
+    .add-friend:active{
+      background-color: rgb(92, 134, 224);
+      color: rgba(255, 255, 255, 0.473);
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" class="google-box" placeholder=" Search Google or type a URL">
+  <br><br><br>
+
+  <div class="div-box">
+    <img src="dog.webp" class="image-edit3">
+    <input type="text" class="twitter-box" placeholder="What's happening?">
+    <button class="button">Tweet</button>
+  </div>
+
+  <br>
+
+  <div class="profile">
+    <img src="dog.webp" class="dog-profile">
+    <p class="dog-name">Max</p>
+    <p class="mutual-friends">20 mutual friends</p>
+    <button class="add-friend">Add Friend</button>
+  </div>
+
+
+</body>
+
+</html>

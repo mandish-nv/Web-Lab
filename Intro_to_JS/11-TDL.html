@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List</title>
+  <style>
+    .grid-display{
+      display: grid;
+      grid-template-columns: 12rem 8rem 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-display">
+    <div><input type="text" placeholder="To do name" id="name"></div>
+    <div><input type="date" id="date"></div>
+    <div><button id="addButton">Add</button></div>
+  </div>
+  
+  <div id="display" class="grid-display"></div>
+
+  <script>
+    let list = [];
+
+    
+    document.querySelector('#addButton').addEventListener('click',()=> addList());
+    document.addEventListener('keypress',(event) => {
+      if(event.key === 'Enter'){
+        addList();
+      }
+    });
+
+    function addList(){
+      const name = document.querySelector('#name').value;
+      const date = document.querySelector('#date').value;
+      list.push({name,date});
+      displayList();
+    }
+
+    function displayList(){
+      let code = '';
+      for(let i=0;i<list.length;i++){
+        code +=`
+            <div>${list[i].name}</div>
+            <div>${list[i].date}</div>
+            <button id="delete">Delete</button>
+        `;
+      }
+      document.querySelector('#display').innerHTML=code;
+
+        document.querySelectorAll('#delete')
+        .forEach((deleteButton,index)=>{
+          deleteButton.addEventListener('click',()=>deleteList(index));
+        });
+    }
+
+    function deleteList(i){
+      list.splice(i,1);
+      displayList();
+    }
+  </script>
+</body>
+</html>

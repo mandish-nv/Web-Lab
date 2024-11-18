@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .main-layout {
+        box-shadow: 0 0 3px 3px gray;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 0px;
+      }
+      .sub-layout{
+        /*Follow button ko position milena*/
+        margin-bottom: 12px;
+        
+      }
+      .profile-layout, .name-layout, .button-layout{
+        display: inline-block;
+      }
+      .name-layout{
+        margin-left: 8px;
+        vertical-align: top;
+      }
+      .profile-picture{
+        width:50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 40px;
+        display: inline-block;
+        vertical-align: middle;
+
+      }
+      .button-layout{
+        vertical-align: middle;
+        margin-left: 100px;
+      }
+      p{
+        margin: 0;
+      }
+      .name{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 2px;
+        margin-bottom: 3px;
+      }
+      .nick-name, .status{
+        color: gray;
+        margin-bottom: 1px;
+      }
+      .status{
+        font-size: 13px;
+      }
+      .follow-button{
+        border:none;
+        background-color: rgb(66, 148, 241);
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="main-layout">
+      <div class="sub-layout">
+        <div class="profile-layout">
+          <img src="dog.webp" class="profile-picture">
+        </div>
+        <div class="name-layout">
+          <p class="name">Max</p>
+          <p class="nick-name">Dawggg</p>
+          <p class="status">Popular</p>
+        </div>
+        <div class="button-layout">
+          <button class="follow-button">Follow</button>
+        </div>
+      </div>
+
+        <div class="sub-layout">
+          <div class="profile-layout">
+            <img src="dog2.jpg" class="profile-picture">
+          </div>
+          <div class="name-layout">
+            <p class="name">Jake</p>
+            <p class="nick-name">Jack</p>
+            <p class="status">Friendly</p>
+          </div>
+          <div class="button-layout">
+            <button class="follow-button">Follow</button>
+          </div>
+        </div>
+
+          <div class="sub-layout">
+            <div class="profile-layout">
+              <img src="dog3.jpg" class="profile-picture">
+            </div>
+            <div class="name-layout">
+              <p class="name">Casper</p>
+              <p class="nick-name">Pug</p>
+              <p class="status">Weird</p>
+            </div>
+            <div class="button-layout">
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+      
+      
+    </div>
+  </body>
+</html>
